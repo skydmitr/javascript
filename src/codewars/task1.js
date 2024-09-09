@@ -38,11 +38,9 @@ let x;
 let  arr = ['', null, x];
 
 function checkArray () {
-    if (arr.length > 0) {
-        console.log('Массив содержит значение ' + typeof arr[2]);
-    } else{
-        console.log('Массив не содержит значение');
-    }
+    let result = (arr.length > 0)
+        ? console.log('Массив содержит значение ' + typeof arr[2])
+        : console.log('Массив не содержит значение');
 }
 
-checkArray(arr);
+checkArray();
